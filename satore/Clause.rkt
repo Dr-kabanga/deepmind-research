@@ -1,11 +1,20 @@
 #lang racket/base
 
-         racket/format
+;***************************************************************************************;
+;****                             Operations on clauses                             ****;
+;***************************************************************************************;
+
+(require bazaar/cond-else
+         bazaar/list
+         bazaar/loop
+         bazaar/mutation
+         (except-in bazaar/order atom<=>)
+         define2
+         global
+         racket/file
          racket/list
-         racket/string
-         satore/clause
-         satore/clause-format
          satore/misc
+         satore/trie
          satore/unification
          syntax/parse/define)
 
